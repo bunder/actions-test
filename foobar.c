@@ -11,5 +11,5 @@ int main(int argc, char *argv[]) {
 	if (uname(&system) == -1)
 		error(EXIT_FAILURE, errno, "Failed to get system identification information");
 
-	printf("My hostname is %s\n", system.nodename);
+	puts(system.nodename);
 }
