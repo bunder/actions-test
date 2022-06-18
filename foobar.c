@@ -13,4 +13,6 @@ int main(int argc, char *argv[]) {
 
 	printf("Sysname:  %s\n", system.sysname);
 	printf("Nodename: %s\n", system.nodename);
+
+	return EXIT_SUCCESS;
 }
