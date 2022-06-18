@@ -11,5 +11,6 @@ int main(int argc, char *argv[]) {
 	if (uname(&system) == -1)
 		error(EXIT_FAILURE, errno, "Failed to get system identification information");
 
+	printf("Sysname:  %s\n", system.sysname);
 	printf("Nodename: %s\n", system.nodename);
 }
